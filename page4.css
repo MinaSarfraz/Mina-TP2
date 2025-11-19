@@ -1,0 +1,94 @@
+.container {
+    background: rgb(238, 223, 229);
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+
+  max-width: 1200px;
+  width: 100%;
+}
+
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1.2;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  flex: 1;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1.2;
+}
+
+
+.box {
+  min-height: 100px;
+  border-radius: 20px;
+  flex: 1;
+}
+
+.green  { background-color: rgb(216, 157, 205); }
+.blue   { background-color: rgb(252, 193, 241); }
+.red    { background-color: rgb(255, 162, 221); }
+.orange { background-color: rgb(188, 108, 150); }
+.yellow {
+  background-color: rgb(215, 167, 224);
+  min-height: 420px;
+}
+.sleep
+{
+  width:100%; 
+  border-radius:10px;
+}
+.texte
+{
+  text-align:center; 
+  font-size:14px; 
+  margin-top:10px;
+}
+h3
+{
+  text-align: center;
+
+}
+@media (max-width:900px) { /* avec 500 ca marche pas ? */
+  .container {
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .left,
+  .center,
+  .right {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .box {
+    width: 90%;
+    height: 120px;
+    min-height: unset;
+  }
+
+  .yellow {
+    width: 90%;
+    height: 200px;
+    min-height: unset;
+  }
+}
